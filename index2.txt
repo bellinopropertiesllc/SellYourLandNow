@@ -1,0 +1,271 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bellino Properties LLC - Land Sales</title>
+  <style>
+    /* General Reset */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Header Styling */
+    header {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-bottom: 2px solid #ccc;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #333;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #007b5e;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://via.placeholder.com/1200x500') no-repeat center/cover;
+      height: 500px;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .hero button {
+      padding: 10px 20px;
+      background-color: #007b5e;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .hero button:hover {
+      background-color: #005f47;
+    }
+
+    /* Sections */
+    section {
+      padding: 40px 10%;
+      background-color: #fff;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    section h2 {
+      color: #007b5e;
+      margin-bottom: 20px;
+    }
+
+    section ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap; /* Allow items to wrap for smaller screens */
+    }
+
+    section ul li {
+      flex: 1 1 calc(100% - 20px); /* Full width on small screens */
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    section ul li img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    section ul li h3 {
+      margin: 10px 0;
+      color: #333;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+
+    footer a {
+      color: #007b5e;
+      text-decoration: none;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column; /* Stack header elements */
+        align-items: flex-start;
+      }
+
+      .hero {
+        height: auto;
+        padding: 20px;
+      }
+
+      .hero h1 {
+        font-size: 36px; /* Adjust font size for smaller screens */
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .hero button {
+        font-size: 14px;
+      }
+
+      section {
+        padding: 20px 5%; /* Reduced padding for smaller screens */
+      }
+
+      section ul li {
+        flex: 1 1 100%; /* Full width for items on smaller screens */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 28px;
+      }
+
+      .hero p {
+        font-size: 14px;
+      }
+
+      .hero button {
+        font-size: 12px;
+      }
+
+      section ul li {
+        padding: 10px; /* Reduce padding for items on very small screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="bp-logo.jpg" alt="Bellino Properties LLC Logo">
+    <nav>
+      <ul>
+        <li><a href="#past-sales">Past Sales</a></li>
+        <li><a href="#accept-offers">Accept Offers</a></li>
+        <li><a href="#properties-for-sale">Properties for Sale</a></li>
+        <li><a href="#about-us">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Bellino Properties LLC</h1>
+    <p>Your Trusted Partner in Land Sales</p>
+    <button>Explore Properties</button>
+  </div>
+
+  <!-- Past Sales Section -->
+  <section id="past-sales">
+    <h2>Past Sales</h2>
+    <ul>
+      <li>
+        <h3>10 Acres</h3>
+        <p>Sold for $100,000</p>
+      </li>
+      <li>
+        <h3>5 Acres</h3>
+        <p>Sold for $50,000</p>
+      </li>
+      <li>
+        <h3>20 Acres</h3>
+        <p>Sold for $200,000</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Accept Offers Section -->
+  <section id="accept-offers">
+    <h2>Accept an Offer</h2>
+    <form>
+      <label for="offer-code">Offer Code:</label>
+      <input type="text" id="offer-code" name="offer-code" required><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <button type="submit">Accept Offer</button>
+    </form>
+  </section>
+
+  <!-- Properties for Sale Section -->
+  <section id="properties-for-sale">
+    <h2>Properties for Sale</h2>
+    <ul>
+      <li>
+        <h3>15 Acres</h3>
+        <p>$150,000</p>
+      </li>
+      <li>
+        <h3>8 Acres</h3>
+        <p>$80,000</p>
+      </li>
+      <li>
+        <h3>25 Acres</h3>
+        <p>$250,000</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Bellino Properties LLC. All rights reserved.</p>
+    <p><a href="#privacy-policy">Privacy Policy</a> | <a href="#terms-of-service">Terms of Service</a></p>
+  </footer>
+</body>
+</html>
